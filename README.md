@@ -17,7 +17,7 @@ docker build -t "fjsnogueira/pyre-check-with-sapp" .
 # pull image
 docker pull fjsnogueira/pyre-check-with-sapp
 # run image passing in the source code folder and the folder used for results 
-docker run -v source:/data/source -v results:/data/results pyre-check
+docker run -v /data/source:/data/source -v /data/results:/data/results fjsnogueira/pyre-check-with-sapp
 ```
 
 ## github

@@ -1,3 +1,5 @@
 #!/bin/bash
 
-pyre --output json --source-directory /data/source analyze --save-results-to /data/results
+cd /data/source
+pyre analyze --save-results-to /data/results
+sapp --database-name /data/results/results.db analyze /data/results/taint-output.json
